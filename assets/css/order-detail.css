@@ -1,7 +1,7 @@
 .applyModal {
   display: none;
   position: fixed;
-  z-index: 1;
+  z-index: 99;
   left: 0;
   top: 0;
   width: 100%;
@@ -177,6 +177,9 @@
     height: 100% !important;
     padding-left: 0 !important;
     margin-bottom: 20px;
+  }
+  .sidebar__content {
+    padding-left: 20px !important;
   }
   .main__content {
     grid-column: span 1 / span 1 !important;
