@@ -218,6 +218,9 @@
   .applyModal-content {
     width: 84%;
   }
+  .datepicker {
+    width: 100% !important;
+  }
   .flex-group {
     flex-direction: column;
     height: 100% !important;
