@@ -110,7 +110,7 @@
     height: 250px !important;
   }
   .banner__content {
-    top: 50%;
+    top: 50% !important;
   }
   .banner__content > p {
     font-size: 20px;
@@ -144,7 +144,7 @@
     margin-top: 5px;
   }
   .order__heading {
-    padding-top: 190px !important;
+    padding-top: 210px !important;
     margin-top: 100px;
   }
   .order__heading span {
