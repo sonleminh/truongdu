@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="./assets/img/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Humanbank.vn - Tổ hợp xuất khẩu lao động và du học</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/sign-in.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div>
+      <div class="relative">
+        <div
+          class="fixed top-0 w-full bg-white z-[69] shadow-[0_0_10px_0_rgba(0,0,0,.2)]"
+        >
+          <div
+            class="header flex justify-between items-center w-[1170px] h-[60px] px-[15px] mx-auto text-[15px] font-medium text-[#292929] text-transform:uppercase"
+          >
+            <h1 class="mr-7">
+              <a href="/" title="UY TÍN – CHẤT LƯỢNG – HÀI LÒNG">
+                <img
+                  src="./assets/img/logo.png"
+                  alt="humanbank"
+                  class="header__logo w-[45px] object-cover"
+                />
+              </a>
+            </h1>
+            <ul
+              class="header__menu flex items-center h-[40px] text-[15px] whitespace-nowrap"
+            >
+              <a href="/order.html" class="px-[15px]">
+                <li>ĐƠN HÀNG</li>
+              </a>
+              <a href="/country.html" class="px-[15px] mx-[3px]">
+                <li>QUỐC GIA</li>
+              </a>
+              <a href="/company.html" class="px-[15px] mx-[3px]">
+                <li>CÔNG TY</li>
+              </a>
+              <a href="/job.html" class="px-[15px] mx-[3px]">
+                <li>NGÀNH NGHỀ</li>
+              </a>
+              <a href="/post.html" class="px-[15px] mx-[3px]">
+                <li>CẨM NANG VIỆC LÀM</li>
+              </a>
+              <li class="dropdown relative h-full">
+                <span class="h-full leading-[40px] px-5 hover:bg-white">
+                  VỀ HUMANBANK
+                </span>
+                <ul
+                  class="dropdown-menu absolute top-[40px] left-0 w-[190px] py-[10px] bg-white rounded-[4px] border-[1px] border-[#f4f4f4] shadow-[0_0_40px_rgba(0,0,0,.2)]"
+                >
+                  <a href="/about.html">
+                    <li
+                      class="px-[20px] py-[8px] text-[15px] text-[#505050] hover:text-[#efbb20] hover:bg-[#f2f2f2]"
+                    >
+                      Về Chúng Tôi
+                    </li>
+                  </a>
+                  <a href="/library.html">
+                    <li
+                      class="px-[20px] py-[8px] text-[15px] text-[#505050] hover:text-[#efbb20] hover:bg-[#f2f2f2]"
+                    >
+                      Thư Viện Ảnh
+                    </li>
+                  </a>
+                  <a href="/https://vanphong.humanbank.vn/">
+                    <li
+                      class="px-[20px] py-[8px] text-[15px] text-[#505050] hover:text-[#efbb20] hover:bg-[#f2f2f2]"
+                    >
+                      Văn Phòng Công Ty
+                    </li>
+                  </a>
+                  <a href="/contact.html">
+                    <li
+                      class="px-[20px] py-[8px] text-[15px] text-[#505050] hover:text-[#efbb20] hover:bg-[#f2f2f2]"
+                    >
+                      Liên Hệ
+                    </li>
+                  </a>
+                </ul>
+              </li>
+            </ul>
+            <a href="/sign-in.html" class="header__menu--profile ml-auto">
+              <div class="flex items-center mx-[13px] whitespace-nowrap">
+                <img
+                  src="./assets/img/header-icon.jpg"
+                  alt="header-icon"
+                  class="w-[34px] h-[34px] mx-3 object-cover text-[30px] text-[#bcbdbf]"
+                />
+                TÀI KHOẢN
+              </div>
+            </a>
+            <div>
+              <i
+                id="mobileBtn"
+                class="fa-solid fa-bars mobile-bars hidden ml-10 text-[#767676] text-[24px]"
+              ></i>
+              <div id="mobileModal" class="mobileModal">
+                <div class="modal-content">
+                  <ul class="">
+                    <a href="/order.html"><li>ĐƠN HÀNG</li></a>
+                    <a href="/country.html"><li>Quốc gia</li></a>
+                    <a href="/company.html"><li>Công ty</li></a>
+                    <a href="/job.html"><li>Ngành nghề</li></a>
+                    <a href="/post.html"><li>Cẩm nang việc làm</li></a>
+                    <a href="/product.html"><li>Sản phẩm</li></a>
+                    <a href="/about.html"><li>Về chúng tôi</li></a>
+                    <a href="/library.html"><li>Thư viện ảnh</li></a>
+                    <a href="/https://vanphong.humanbank.vn"
+                      ><li>Văn phòng Công ty</li></a
+                    >
+                    <a href="/contact.html"><li>Liên hệ</li></a>
+                    <a href="/sign-in.html"
+                      ><li class="flex items-center">
+                        <img
+                          src="./assets/img/header-icon.jpg"
+                          alt="truongdu.com"
+                          class="w-[30px] mr-2 object-cover"
+                        />Tài khoản
+                      </li></a
+                    >
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pt-[60px] pb-[20px] bg-[#f8f8f8]">
+      <div
+        class="wrapper max-w-[498px] px-[30px] py-[20px] mx-auto my-20 bg-white shadow-[0_0_10px_0_rgba(0,24,128,.1)]"
+      >
+        <p class="mt-3 mb-10 text-center text-[#232323] text-[22px]">
+          ĐĂNG KÝ TÀI KHOẢN
+        </p>
+        <div>
+          <div class="w-full h-[55px] my-4">
+            <input
+              name="name"
+              placeholder="Họ tên"
+              class="w-full h-[45px] px-4 text-[15px] text-[#495057] border-[1px] border-[#eee] placeholder:text-[15px] rounded shadow-[0_0_10px_0_rgba(0,24,128,.1)] outline-none"
+            />
+          </div>
+          <div class="w-full h-[55px] my-4">
+            <input
+              name="phone"
+              placeholder="Số điện thoại"
+              type="number"
+              class="w-full h-[45px] px-4 text-[15px] text-[#495057] placeholder:text-[15px] rounded shadow-[0_0_10px_0_rgba(0,24,128,.1)] outline-none"
+            />
+          </div>
+          <div class="w-full h-[55px] my-4">
+            <input
+              name="password"
+              placeholder="Mật khẩu"
+              type="password"
+              class="w-full h-[45px] px-4 text-[15px] text-[#495057] placeholder:text-[15px] rounded shadow-[0_0_10px_0_rgba(0,24,128,.1)] outline-none"
+            />
+          </div>
+          <div class="w-full h-[55px] my-4">
+            <input
+              name="confirmPassword"
+              placeholder="Xác nhận mật khẩu"
+              type="password"
+              class="w-full h-[45px] px-4 text-[15px] text-[#495057] placeholder:text-[15px] rounded shadow-[0_0_10px_0_rgba(0,24,128,.1)] outline-none"
+            />
+          </div>
+          <div class="w-full h-[55px] my-4">
+            <input
+              name="email"
+              placeholder="Email"
+              type="email"
+              class="w-full h-[45px] px-4 text-[15px] text-[#495057] placeholder:text-[15px] rounded shadow-[0_0_10px_0_rgba(0,24,128,.1)] outline-none"
+            />
+          </div>
+          <div class="w-full h-[55px] my-4">
+            <input
+              name="address"
+              placeholder="Địa chỉ"
+              class="w-full h-[45px] px-4 text-[15px] text-[#495057] placeholder:text-[15px] rounded shadow-[0_0_10px_0_rgba(0,24,128,.1)] outline-none"
+            />
+          </div>
+          <div class="w-full h-[55px] my-4">
+            <select
+              id="countries"
+              class="w-full h-[45px] px-4 text-[15px] text-[#495057] placeholder:text-[15px] rounded shadow-[0_0_10px_0_rgba(0,24,128,.1)] outline-none"
+            >
+              <option defaultValue>Chọn giới tính</option>
+              <option value="nam">Nam</option>
+              <option value="nữ">Nữ</option>
+              <option value="khác">Khác</option>
+            </select>
+          </div>
+          <div class="w-full h-[55px] my-4">
+            <input
+              type="date"
+              id="start"
+              name="trip-start"
+              placeholder="Nhập ngày sinh"
+              min="2018-01-01"
+              max="2018-12-31"
+              class="w-full h-[45px] px-4 text-[15px] text-[#495057] placeholder:text-[15px] rounded shadow-[0_0_10px_0_rgba(0,24,128,.1)] outline-none"
+            />
+          </div>
+          <button
+            class="flex justify-center items-center w-full py-2 mt-2 mb-5 text-[16px] text-white rounded bg-primary"
+          >
+            <i class="fa-solid fa-user-plus mr-1.5 text-[13px]"></i>
+            TẠO TÀI KHOẢN
+          </button>
+          <p class="mb-3 text-center text-[16px]">
+            Đã có tài khoản?
+            <a href="/sign-in.html" class="text-[#1890ff]"> Đăng nhập </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="bg-[#222845]">
+        <div class="footer w-[1130px] mx-auto py-10">
+          <div class="footer__main flex justify-between">
+            <div
+              class="footer__main--item w-[35%] text-[#aba6b3] text-[14px] text-[#c6cffa]"
+            >
+              <p class="footer__item--title mb-6 text-[20px] text-white">
+                Kết nối với Humanbank.vn
+              </p>
+              <div class="flex items-center my-1">
+                <i class="fa-solid fa-phone mr-2"></i>
+                <p class="">033 806 2211</p>
+              </div>
+              <div class="flex items-center my-1">
+                <i class="fa-solid fa-envelope mr-2"></i>
+                <p class="">contact@humanbank.vn</p>
+              </div>
+              <div class="flex items-center my-1">
+                <i class="fa-solid fa-location-dot mr-2"></i>
+                <p class="">
+                  Tầng 23, Tòa nhà T608, Đường Tôn Quang Phiệt, Cổ Nhuế 1, Bắc
+                  Từ Liêm, Hà Nội.
+                </p>
+              </div>
+              <div class="flex items-center mt-5">
+                <i
+                  class="fa-brands social-icon fa-facebook-f w-10 h-10 p-3 mr-2 bg-[#3b5998] rounded-[50%]"
+                ></i>
+                <i
+                  class="fa-solid fa-location-dot social-icon w-10 h-10 p-3 mr-2 bg-[#de4e43] rounded-[50%]"
+                ></i>
+                <i
+                  class="fa-brands fa-linkedin-in social-icon w-10 h-10 p-3 mr-2 bg-[#007bb6] rounded-[50%]"
+                ></i>
+                <i
+                  class="fa-brands fa-youtube social-icon w-10 h-10 p-3 mr-2 bg-[#ce201f] rounded-[50%]"
+                ></i>
+                <i
+                  class="fa-brands fa-tiktok social-icon w-10 h-10 p-3 mr-2 bg-[#212222] rounded-[50%]"
+                ></i>
+                <i
+                  class="fa-brands fa-instagram social-icon w-10 h-10 p-3 mr-2 bg-[#8a5a4e] rounded-[50%]"
+                ></i>
+              </div>
+              <img
+                src="./assets/img/dmca.png"
+                alt="DMCA"
+                class="w-[100px] mt-3 object-cover"
+              />
+            </div>
+            <div class="footer__main--item w-[35%]">
+              <p class="footer__item--title mb-6 text-[18px] text-white">
+                Về Humanbank.vn
+              </p>
+              <div class="flex text-[#aba6b3] text-[14px] text-[#c6cffa]">
+                <div class="mr-[100px]">
+                  <p class="my-1 sm:my-0">Về chúng tôi</p>
+                  <p class="my-1 sm:my-0">Thư viện ảnh</p>
+                  <p class="my-1 sm:my-0">Văn phòng công ty</p>
+                  <p class="my-1 sm:my-0">Liên hệ</p>
+                </div>
+                <div class="text-[#aba6b3] text-[14px] text-[#c6cffa]">
+                  <p class="text-[18px] text-white"></p>
+                  <p class="my-1 sm:my-0">Quy chế hoạt động</p>
+                  <p class="my-1 sm:my-0">Điều khoản sử dụng</p>
+                  <p class="my-1 sm:my-0">Quy định bảo mật</p>
+                  <p class="my-1 sm:my-0">Sơ đồ trang web</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="footer__main--item w-[20%] text-[#aba6b3] text-[14px] text-[#c6cffa]"
+            >
+              <p class="footer__item--title mb-6 text-[18px] text-white">
+                Danh mục
+              </p>
+              <p class="my-1">Đơn hàng</p>
+              <p class="my-1">Quốc gia</p>
+              <p class="my-1">Công ty</p>
+              <p class="my-1">Ngành nghề</p>
+              <p class="my-1">Cẩm nang việc làm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-5 bg-[#171d36] text-[#c6cffa] text-[14px] overflow-hidden">
+        <div class="copyright flex justify-center items-center">
+          <span class="flex items-center">
+            © Copyright 2021 By
+            <FaHeart class="mx-1 text-[#ff4045]" />
+            HumanBank.Vn.
+          </span>
+          <span>All Rights Reserved.</span>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

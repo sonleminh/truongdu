@@ -1,0 +1,237 @@
+.applyModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.applyModal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: #eef1f2;
+  border: 1px solid #888;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+}
+
+.closeBtn :hover,
+.closeBtn :focus {
+  color: #aaaaaa;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+}
+
+@media (min-width: 787px) and (max-width: 1023px) {
+  .banner__content {
+    top: 50% !important;
+  }
+  .wrapper {
+    width: 84%;
+  }
+  .main {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .sidebar {
+    grid-column: span 1 / span 1 !important;
+    position: relative !important;
+    top: 30px !important;
+    height: 100% !important;
+    padding-left: 0 !important;
+    margin-bottom: 20px;
+  }
+  .sidebar > img {
+    width: 40% !important;
+  }
+  .main__content {
+    grid-column: span 1 / span 1 !important;
+  }
+  .content__title {
+    line-height: 36px;
+  }
+  .content__title--info div i {
+    margin-right: 20px;
+  }
+  .applyModal-content {
+    padding: 40px;
+  }
+  .flex-group > div {
+    width: 48%;
+    height: 54px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 786px) {
+  .banner__bg {
+    height: 250px !important;
+  }
+  .banner__content {
+    top: 50% !important;
+  }
+  .banner__content > p {
+    font-size: 30px;
+  }
+  .banner__content > div {
+    font-size: 16px;
+  }
+  .wrapper {
+    width: 84%;
+    padding: 0;
+  }
+  .main {
+    grid-template-columns: repeat(1, 1fr) !important;
+    margin-top: 0 !important;
+  }
+  .sidebar {
+    grid-column: span 1 / span 1 !important;
+    position: relative !important;
+    top: 30px !important;
+    height: 100% !important;
+    padding-left: 0 !important;
+    margin-bottom: 20px;
+  }
+  .sidebar > img {
+    width: 30% !important;
+  }
+  .main__content {
+    grid-column: span 1 / span 1 !important;
+  }
+  .content__title {
+    line-height: 36px;
+  }
+  .content__title--info div i {
+    margin-right: 20px;
+  }
+  .res-form {
+    width: 80% !important;
+  }
+  .flex-group > div {
+    width: 100%;
+    height: 54px;
+  }
+  .flex-group div input {
+    height: 35px;
+  }
+  .email-input,
+  .address-input {
+    height: 54px;
+  }
+  .email-input input,
+  .address-input input {
+    height: 35px;
+    padding: 0 20px;
+  }
+  .applyModal-content {
+    width: 64% !important;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 639px) {
+  .banner__bg {
+    height: 250px !important;
+  }
+  .banner__content {
+    top: 50%;
+  }
+  .banner__content > p {
+    font-size: 20px;
+  }
+  .banner__content > div {
+    font-size: 16px;
+  }
+  .banner__content div i {
+    margin: 0 4px;
+  }
+  .wrapper {
+    width: 94%;
+    padding: 0;
+  }
+  .main {
+    grid-template-columns: repeat(1, 1fr) !important;
+    margin-top: 0 !important;
+  }
+  .sidebar {
+    grid-column: span 1 / span 1 !important;
+    position: relative !important;
+    top: 30px !important;
+    height: 100% !important;
+    padding-left: 0 !important;
+    margin-bottom: 20px;
+  }
+  .main__content {
+    grid-column: span 1 / span 1 !important;
+  }
+  .content__title {
+    line-height: 36px;
+  }
+  .content__title--des {
+    flex-direction: column;
+    align-items: start !important;
+    font-size: 16px;
+  }
+  .content__title--info {
+    margin-right: 0 !important;
+    padding: 20px !important;
+  }
+  .content__title--info > div {
+    margin-bottom: 8px;
+    margin-right: 5px;
+  }
+  .content__title--info div i {
+    /* width: 20px; */
+    /* margin-right: 0; */
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+  .res-form {
+    width: 100% !important;
+  }
+  .applyModal-title {
+    width: 94% !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
+  }
+  .applyModal-content {
+    width: 84%;
+  }
+  .flex-group {
+    flex-direction: column;
+    height: 100%;
+  }
+  .flex-group > div {
+    width: 100%;
+    height: 54px;
+  }
+  .flex-group div input {
+    height: 35px;
+  }
+  .email-input,
+  .address-input {
+    height: 54px !important;
+  }
+  .email-input input,
+  .address-input input {
+    height: 35px;
+    padding: 0 20px;
+  }
+}

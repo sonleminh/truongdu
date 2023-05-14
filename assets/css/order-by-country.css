@@ -1,0 +1,132 @@
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .wrapper {
+    width: 84% !important;
+  }
+  .order__heading {
+    margin-top: 50px;
+  }
+  .order__heading span {
+    font-size: 20px;
+  }
+  .order__list {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .paginate a li i {
+    line-height: 36px;
+  }
+}
+
+@media (min-width: 787px) and (max-width: 1023px) {
+  .wrapper {
+    width: 84% !important;
+  }
+  .order__heading {
+    margin-top: 50px;
+  }
+  .order__heading span {
+    font-size: 20px;
+  }
+  .order__list {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .paginate a li i {
+    line-height: 36px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 786px) {
+  .wrapper {
+    width: 84% !important;
+  }
+  .order__heading {
+    margin-top: 50px;
+  }
+  .order__heading span {
+    font-size: 20px;
+  }
+  .order__list {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .paginate a li i {
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 639px) {
+  .banner__bg {
+    height: 250px !important;
+  }
+  .banner__content {
+    top: 50% !important;
+  }
+  .banner__content > p {
+    font-size: 20px;
+  }
+  .banner__content > div {
+    font-size: 16px;
+  }
+  .wrapper {
+    width: 92% !important;
+  }
+  .searchbox__wrapper {
+    width: 94% !important;
+    top: -150px !important;
+  }
+  .searchbox {
+    flex-direction: column;
+  }
+  .searchbox div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .searchbox div i {
+    right: 5px;
+  }
+  .searchbox select {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+  .searchbox button {
+    width: 100%;
+    margin-top: 5px;
+  }
+  .order__heading {
+    margin-top: 50px;
+  }
+  .order__heading span {
+    font-size: 20px;
+  }
+  .order__list {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .order__list--item {
+    overflow: hidden;
+  }
+  .order__item--logo {
+    width: 60px !important;
+    height: 60px !important;
+    margin-right: 12px;
+  }
+  .order__item--content {
+    padding-left: 10px;
+  }
+  .order__item--title {
+    font-size: 16px;
+  }
+  .order__item--company {
+    font-size: 12px;
+  }
+  .order__item--des {
+    font-size: 14px;
+  }
+  .order__item--des > div:first-child {
+    margin-right: 10px;
+  }
+  .order__item--des div div i {
+    width: 16px;
+    margin-right: 5px;
+  }
+  .paginate a li i {
+    line-height: 36px;
+  }
+}

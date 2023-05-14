@@ -1,0 +1,124 @@
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .company {
+    width: 84%;
+  }
+}
+
+@media (min-width: 787px) and (max-width: 1023px) {
+  .company {
+    width: 84%;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 786px) {
+  .companyBanner-address {
+    color: #e4e4e4;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .company {
+    width: 84%;
+  }
+  .company__main {
+    display: block !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .order__heading span {
+    font-size: 20px;
+  }
+  .order__list {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .order__list--item {
+    overflow: hidden;
+  }
+  .order__item--logo {
+    width: 60px !important;
+    height: 60px !important;
+    margin-right: 12px;
+  }
+  .order__item--content {
+    padding-left: 10px;
+  }
+  .order__item--title {
+    font-size: 16px;
+  }
+  .order__item--company {
+    font-size: 12px;
+  }
+  .order__item--des {
+    font-size: 14px;
+  }
+  .order__item--des > div:first-child {
+    margin-right: 10px;
+  }
+  .order__item--des div div i {
+    width: 16px;
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 639px) {
+  .companyBanner__bg {
+    height: 300px !important;
+  }
+  .companyBanner__content {
+    left: 0% !important;
+  }
+  .companyBanner__content > div {
+    width: 92%;
+    margin: 0 auto;
+  }
+  .companyBanner-logo {
+    width: 60px !important;
+    height: 60px !important;
+    margin-right: 8px !important;
+  }
+  .companyBanner-address {
+    color: #e4e4e4;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .company {
+    width: 96%;
+  }
+  .company__main {
+    display: block !important;
+    grid-template-columns: none !important;
+  }
+  .order__heading span {
+    font-size: 20px;
+  }
+  .order__list {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .order__list--item {
+    overflow: hidden;
+  }
+  .order__item--logo {
+    width: 60px !important;
+    height: 60px !important;
+    margin-right: 12px;
+  }
+  .order__item--content {
+    padding-left: 10px;
+  }
+  .order__item--title {
+    font-size: 16px;
+  }
+  .order__item--company {
+    font-size: 12px;
+  }
+  .order__item--des {
+    font-size: 14px;
+  }
+  .order__item--des > div:first-child {
+    margin-right: 10px;
+  }
+  .order__item--des div div i {
+    width: 16px;
+    margin-right: 5px;
+  }
+}

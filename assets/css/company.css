@@ -1,0 +1,57 @@
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .wrapper {
+    width: 84%;
+  }
+  .company__list,
+  .education__list {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (min-width: 787px) and (max-width: 1023px) {
+  .wrapper {
+    width: 84%;
+  }
+  .company__list,
+  .education__list {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 786px) {
+  .wrapper {
+    width: 84%;
+  }
+  .company__list,
+  .education__list {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 639px) {
+  .banner__bg {
+    height: 250px !important;
+  }
+  .banner__content {
+    top: 50% !important;
+  }
+  .banner__content > p {
+    font-size: 20px;
+  }
+  .banner__content > div {
+    font-size: 16px;
+  }
+  .wrapper {
+    width: 92%;
+  }
+  .title {
+    font-size: 20px !important;
+  }
+  .company__list,
+  .education__list {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .name {
+    width: 100% !important;
+  }
+}

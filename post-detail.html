@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="./assets/img/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Humanbank.vn - Tổ hợp xuất khẩu lao động và du học</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/post-detail.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div>
+      <div class="relative">
+        <div
+          class="fixed top-0 w-full bg-white z-[69] shadow-[0_0_10px_0_rgba(0,0,0,.2)]"
+        >
+          <div
+            class="header flex justify-between items-center w-[1170px] h-[60px] px-[15px] mx-auto text-[15px] font-medium text-[#292929] text-transform:uppercase"
+          >
+            <h1 class="mr-7">
+              <a href="/" title="UY TÍN – CHẤT LƯỢNG – HÀI LÒNG">
+                <img
+                  src="./assets/img/logo.png"
+                  alt="humanbank"
+                  class="header__logo w-[45px] object-cover"
+                />
+              </a>
+            </h1>
+            <ul
+              class="header__menu flex items-center h-[40px] text-[15px] whitespace-nowrap"
+            >
+              <a href="/order.html" class="px-[15px]">
+                <li>ĐƠN HÀNG</li>
+              </a>
+              <a href="/country.html" class="px-[15px] mx-[3px]">
+                <li>QUỐC GIA</li>
+              </a>
+              <a href="/company.html" class="px-[15px] mx-[3px]">
+                <li>CÔNG TY</li>
+              </a>
+              <a href="/job.html" class="px-[15px] mx-[3px]">
+                <li>NGÀNH NGHỀ</li>
+              </a>
+              <a href="/post.html" class="px-[15px] mx-[3px]">
+                <li>CẨM NANG VIỆC LÀM</li>
+              </a>
+              <li class="dropdown relative h-full">
+                <span class="h-full leading-[40px] px-5 hover:bg-white">
+                  VỀ HUMANBANK
+                </span>
+                <ul
+                  class="dropdown-menu absolute top-[40px] left-0 w-[190px] py-[10px] bg-white rounded-[4px] border-[1px] border-[#f4f4f4] shadow-[0_0_40px_rgba(0,0,0,.2)]"
+                >
+                  <a href="/about.html">
+                    <li
+                      class="px-[20px] py-[8px] text-[15px] text-[#505050] hover:text-[#efbb20] hover:bg-[#f2f2f2]"
+                    >
+                      Về Chúng Tôi
+                    </li>
+                  </a>
+                  <a href="/library.html">
+                    <li
+                      class="px-[20px] py-[8px] text-[15px] text-[#505050] hover:text-[#efbb20] hover:bg-[#f2f2f2]"
+                    >
+                      Thư Viện Ảnh
+                    </li>
+                  </a>
+                  <a href="/https://vanphong.humanbank.vn/">
+                    <li
+                      class="px-[20px] py-[8px] text-[15px] text-[#505050] hover:text-[#efbb20] hover:bg-[#f2f2f2]"
+                    >
+                      Văn Phòng Công Ty
+                    </li>
+                  </a>
+                  <a href="/contact.html">
+                    <li
+                      class="px-[20px] py-[8px] text-[15px] text-[#505050] hover:text-[#efbb20] hover:bg-[#f2f2f2]"
+                    >
+                      Liên Hệ
+                    </li>
+                  </a>
+                </ul>
+              </li>
+            </ul>
+            <a href="/sign-in.html" class="header__menu--profile ml-auto">
+              <div class="flex items-center mx-[13px] whitespace-nowrap">
+                <img
+                  src="./assets/img/header-icon.jpg"
+                  alt="header-icon"
+                  class="w-[34px] h-[34px] mx-3 object-cover text-[30px] text-[#bcbdbf]"
+                />
+                TÀI KHOẢN
+              </div>
+            </a>
+            <div>
+              <i
+                id="mobileBtn"
+                class="fa-solid fa-bars mobile-bars hidden ml-10 text-[#767676] text-[24px]"
+              ></i>
+              <div id="mobileModal" class="mobileModal">
+                <div class="modal-content">
+                  <ul class="">
+                    <a href="/order.html"><li>ĐƠN HÀNG</li></a>
+                    <a href="/country.html"><li>Quốc gia</li></a>
+                    <a href="/company.html"><li>Công ty</li></a>
+                    <a href="/job.html"><li>Ngành nghề</li></a>
+                    <a href="/post.html"><li>Cẩm nang việc làm</li></a>
+                    <a href="/product.html"><li>Sản phẩm</li></a>
+                    <a href="/about.html"><li>Về chúng tôi</li></a>
+                    <a href="/library.html"><li>Thư viện ảnh</li></a>
+                    <a href="/https://vanphong.humanbank.vn"
+                      ><li>Văn phòng Công ty</li></a
+                    >
+                    <a href="/contact.html"><li>Liên hệ</li></a>
+                    <a href="/sign-in.html"
+                      ><li class="flex items-center">
+                        <img
+                          src="./assets/img/header-icon.jpg"
+                          alt="truongdu.com"
+                          class="w-[30px] mr-2 object-cover"
+                        />Tài khoản
+                      </li></a
+                    >
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner relative w-full">
+      <div
+        class="banner__bg relative flex justify-center items-center h-[300px]"
+      >
+        <img
+          src="./assets/img/banner.jpg"
+          alt=""
+          class="absolute w-full h-full object-cover"
+        />
+        <div
+          class="absolute top-0 right-0 bottom-0 left-0 bg-[rgba(0,0,0,0.5)]"
+        ></div>
+      </div>
+      <div
+        class="banner__content absolute top-[43%] right-[50%] translate-x-[50%] text-white text-center"
+      >
+        <p class="text-[38px] font-bold whitespace-nowrap">Nội dung chi tiết</p>
+        <div
+          class="flex justify-center items-center whitespace-nowrap text-[20px]"
+        >
+          <a href="/">Trang chủ</a>
+          <i class="fa-solid fa-angle-right mx-3 text-[14px]"></i>
+          <span>Bài viết</span>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper max-w-[1170px] mx-auto px-[12px]">
+      <div class="post grid grid-cols-12 gap-8 mt-10">
+        <div class="post__main col-span-8 mb-10">
+          <div class="flex items-center mb-3 whitespace-nowrap text-[#707070]">
+            <i class="fa-solid fa-calendar-days mr-2"></i>
+            <span
+              class="pr-2 mr-2 leading-[14px] border-r-[1px] border-[#bcbdbf]"
+            >
+              02-04-2023
+            </span>
+            <span class="text-[#bcbdbf] whitespace-normal">
+              Xuất khẩu lao động Hàn Quốc
+            </span>
+          </div>
+          <p class="text-[28px] font-bold text-textColor leading-9">
+            Đơn xây dựng Đài Loan, cơ hội việc làm tại Đài Loan cho các lao động
+            tuổi cao
+          </p>
+          <img
+            src="https://media.humanbank.vn/upload/files/2023/04/25/don-xay-dung-dai-loan-co-hoi-viec-lam-tai-dai-loan-cho-lao-dong-tuoi-cao-20230425145040432.jpg"
+            alt="humanbank"
+            class="w-full my-6 rounded object-cover"
+          />
+          <p
+            class="banner__title px-5 mb-5 text-center text-[38px] font-bold text-textColor leading-[50px]"
+          >
+            CƠ HỘI VIỆC LÀM CHO LAO ĐỘNG TUỔI CAO TẠI ĐÀI LOAN
+          </p>
+          <p class="mb-5">
+            Đơn xây dựng Đài Loan là chương trình XKLĐ Đài Loan dành cho các lao
+            động phổ thông trong lĩnh vực xây dựng. Đơn này thường lấy các lao
+            động Nam, tuổi từ 21 đến 45. Vì vậy, đây là cơ hội rất tốt để các
+            lao động tuổi cao có cơ hội sang Đài Loan làm việc để cải thiện kinh
+            tế gia đình. Các công việc chính của đơn này thường liên quan đến
+            xây trát ốp lát, mộc cốp pha, cắt sắt, buộc sắt, đổ bê tông, dọn vệ
+            sinh công trường,...
+          </p>
+          <p class="mb-5">
+            Vậy để đi XKLĐ Đài Loan đơn xây dựng cần những điều kiện gì? Lương
+            đơn xây dựng Đài Loan có cao không? Đơn xây dựng Đài Loan thường làm
+            những công việc gì? Hãy cùng HumanBank tìm hiểu chi tiết bên dưới
+            nhé!
+          </p>
+          <p class="text-[22px] font-medium text-textColor">ĐIỀU KIỆN</p>
+          <ul>
+            <li class="my-5">
+              <span>+</span>
+              <span>Giới tính: Nam.</span>
+            </li>
+            <li class="my-5">
+              <span>+</span>
+              <span>Tuổi từ 21 đến 45, cao trên 1m60, nặng trên 50kg.</span>
+            </li>
+            <li class="my-5">
+              <span>+</span>
+              <span>
+                Lao động chăm chỉ, chịu khó, biết nghe lời, khỏe mạnh, phản xạ
+                nhanh, chủ động trong công việc.
+              </span>
+            </li>
+          </ul>
+          <p class="text-[22px] font-medium text-textColor">QUYỀN LỢI</p>
+
+          <ul>
+            <li class="my-5">
+              <span>-</span>
+              <span>Giới tính: Nam.</span>
+            </li>
+            <li class="my-5">
+              <span>-</span>
+              <span>Tuổi từ 21 đến 45, cao trên 1m60, nặng trên 50kg.</span>
+            </li>
+            <li class="my-5">
+              <span>-</span>
+              <span>
+                Lao động chăm chỉ, chịu khó, biết nghe lời, khỏe mạnh, phản xạ
+                nhanh, chủ động trong công việc.
+              </span>
+            </li>
+          </ul>
+          <p class="text-[22px] font-medium text-textColor">CÔNG VIỆC</p>
+          <ul class="border-b-[1px] border-[#eee]">
+            <li class="my-5">
+              <span>-</span>
+              <span>Giới tính: Nam.</span>
+            </li>
+            <li class="my-5">
+              <span>-</span>
+              <span>Tuổi từ 21 đến 45, cao trên 1m60, nặng trên 50kg.</span>
+            </li>
+            <li class="my-5">
+              <span>-</span>
+              <span>
+                Lao động chăm chỉ, chịu khó, biết nghe lời, khỏe mạnh, phản xạ
+                nhanh, chủ động trong công việc.
+              </span>
+            </li>
+          </ul>
+          <p class="my-5 text-[24px] font-medium text-textColor">
+            Đăng ký đi đơn xây dựng Đài Loan ngay hôm nay!
+          </p>
+          <p>Bạn cần được tư vấn cụ thể hơn?</p>
+          <p>
+            Vui lòng để lại thông tin liên hệ, đội ngũ của chúng tôi sẽ liên hệ
+            hỗ trợ trực tiếp cho bạn.
+          </p>
+          <div class="relative h-[700px] overflow-auto">
+            <div
+              class="absolute top-0 flex justify-center items-center w-full h-[222px] z-[-1]"
+            >
+              <div
+                class="absolute top-0 right-0 bottom-0 left-0 bg-[rgba(0,0,0,0.5)]"
+              ></div>
+              <img
+                src="https://form.humanbank.vn/images/form-header.jpg"
+                alt="humanbank"
+                class="absolute w-full h-full object-cover"
+              />
+            </div>
+            <div class="relative top-[50px] w-full">
+              <p
+                class="form__title text-center text-white text-[32px] font-bold"
+              >
+                Yêu cầu tư vấn
+              </p>
+              <p
+                class="form__des mb-8 text-center text-[#c2c2c2] text-[22px] font-medium"
+              >
+                Mô tả các thông tin cần tư vấn của bạn
+              </p>
+              <div class="form__main mx-5 p-5 bg-white z-[69] text-[#4f5466]">
+                <div class="flex justify-between w-full h-[44px] my-6">
+                  <div class="form__name w-[47%]">
+                    <p class="mb-2 font-bold">
+                      <span class="text-[red]">(*)</span> Họ tên
+                    </p>
+                    <input
+                      name="name"
+                      placeholder="Họ tên của bạn"
+                      class="w-full px-4 py-1.5 border-[1px] border-[#ced4da] rounded"
+                    />
+                  </div>
+                  <div class="form__phone w-[47%]">
+                    <p class="mb-2 font-bold">
+                      <span class="text-[red]">(*)</span> Điện thoại
+                    </p>
+                    <input
+                      name="phone"
+                      placeholder="Số điện thoại của bạn"
+                      type="number"
+                      class="w-full px-4 py-1.5 border-[1px] border-[#ced4da] rounded"
+                    />
+                  </div>
+                </div>
+                <div class="form__email w-full h-[50px] my-10">
+                  <p class="mb-2 font-bold">Email</p>
+                  <input
+                    name="email"
+                    placeholder="Email liên hệ"
+                    class="w-full px-4 py-1.5 border-[1px] border-[#ced4da] rounded"
+                  />
+                </div>
+                <p class="mb-5 font-bold text-[17px]">Loại hình quan tâm</p>
+                <div class="grid grid-cols-2 gap-5 w-full">
+                  <div
+                    class="w-full px-4 py-1.5 bg-[#f3f3f3] border-[#d3d9f0] border-[1px] rounded"
+                  >
+                    <input
+                      type="radio"
+                      id="rdStudyAboard"
+                      name="type"
+                      value="Du học"
+                      class="mr-2"
+                    />
+                    <label class="text-[#7e7e7e] text-[15px]"> Du học </label>
+                  </div>
+                  <div
+                    class="w-full px-4 py-1.5 bg-[#f3f3f3] border-[#d3d9f0] border-[1px] rounded"
+                  >
+                    <input
+                      type="radio"
+                      id="rdStudyAboard"
+                      name="type"
+                      value="Du học"
+                      class="mr-2"
+                    />
+                    <label class="text-[#7e7e7e] text-[15px]"> Du học </label>
+                  </div>
+                  <div
+                    class="w-full px-4 py-1.5 bg-[#f3f3f3] border-[#d3d9f0] border-[1px] rounded"
+                  >
+                    <input
+                      type="radio"
+                      id="rdStudyAboard"
+                      name="type"
+                      value="Du học"
+                      class="mr-2"
+                    />
+                    <label class="text-[#7e7e7e] text-[15px]"> Du học </label>
+                  </div>
+                </div>
+                <p class="my-5 font-bold text-[17px]">Loại hình quan tâm</p>
+                <div class="grid grid-cols-2 gap-5 w-full">
+                  <div
+                    class="w-full px-4 py-1.5 bg-[#f3f3f3] border-[#d3d9f0] border-[1px] rounded"
+                  >
+                    <input
+                      type="radio"
+                      id="rdStudyAboard"
+                      name="type"
+                      value="Du học"
+                      class="mr-2"
+                    />
+                    <label class="text-[#7e7e7e] text-[15px]"> Germany </label>
+                  </div>
+                  <div
+                    class="w-full px-4 py-1.5 bg-[#f3f3f3] border-[#d3d9f0] border-[1px] rounded"
+                  >
+                    <input
+                      type="radio"
+                      id="rdStudyAboard"
+                      name="type"
+                      value="Du học"
+                      class="mr-2"
+                    />
+                    <label class="text-[#7e7e7e] text-[15px]"> Germany </label>
+                  </div>
+                  <div
+                    class="w-full px-4 py-1.5 bg-[#f3f3f3] border-[#d3d9f0] border-[1px] rounded"
+                  >
+                    <input
+                      type="radio"
+                      id="rdStudyAboard"
+                      name="type"
+                      value="Du học"
+                      class="mr-2"
+                    />
+                    <label class="text-[#7e7e7e] text-[15px]"> Germany </label>
+                  </div>
+                </div>
+                <div class="w-full pt-10">
+                  <p class="mb-5 font-bold">Nội dung yêu cầu</p>
+                  <textarea
+                    type="text"
+                    rows="4"
+                    placeholder="Nội dung"
+                    class="w-full px-4 py-1.5 border-[1px] border-[#ced4da] rounded"
+                  ></textarea>
+                </div>
+                <button
+                  class="w-full py-3.5 mt-5 text-[18px] text-white font-medium rounded bg-primary"
+                >
+                  GỬI YÊU CẦU
+                </button>
+              </div>
+              <div
+                class="bg-[#1b1e2d] text-white text-[13px] font-bold text-center"
+              >
+                <p class="py-10">
+                  © Copyright by
+                  <a href="https://humanbank.vn" target="_blank">
+                    HumanBank.Vn
+                  </a>
+                  . All Rights Reserved.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="my-5 pt-2 pb-5 border-t-[1px] border-b-[1px] border-[#eee]"
+          >
+            <p class="my-5 text-[17px] font-bold text-textColor">
+              Tư vấn và hỗ trợ
+            </p>
+            <p class="my-5 text-[16px] font-bold text-textColor">
+              Trung tâm Du học Seoul - HumanBank
+            </p>
+            <ul>
+              <li class="flex items-center">
+                <span>
+                  <font>➡️ Địa chỉ: </font>
+                  <span class="mx-2 text-[16px] font-bold text-textColor">
+                    Tầng 23, Tòa T608, đường Tôn Quang Phiệt, Cổ Nhuế 1, Bắc Từ
+                    Liêm, Hà Nội.
+                  </span>
+                </span>
+              </li>
+              <li class="flex items-center">
+                <span>
+                  <font>➡️ Hotline: </font>
+                  <span class="mx-2 text-[16px] font-bold text-[#0069db]">
+                    0332 022 112 <span class="text-black">/</span> 0961 696 331
+                  </span>
+                </span>
+              </li>
+              <li class="flex items-center">
+                <span>
+                  <font>➡️ Email: </font>
+                  <span class="mx-2 text-[16px] font-bold text-[#0069db]">
+                    contact@humanbank.vn
+                  </span>
+                </span>
+              </li>
+              <li class="flex items-center">
+                <span>
+                  <font>➡️ Facebook: </font>
+                  <span class="mx-2 text-[16px] font-bold text-[#0069db]">
+                    facebook.com/humanbank.xkldduhoc
+                  </span>
+                </span>
+              </li>
+              <li class="flex items-center">
+                <span>
+                  <font>➡️ Website: </font>
+                  <span class="mx-2 text-[16px] font-bold text-[#0069db]">
+                    humanbank.vn
+                  </span>
+                </span>
+              </li>
+              <div class="my-5">
+                <p>
+                  ❤️
+                  <span class="mx-1 text-[16px] font-bold text-[#0069db]">
+                    Humanbank.vn
+                  </span>
+                  là nơi bạn có thể tìm thấy hầu hết các đơn hàng xuất khẩu lao
+                  động và du học của hầu hết các quốc gia trên thế giới, cụ thể
+                  như:
+                </p>
+                <ul>
+                  <li>
+                    <span>- </span>
+                    <span class="text-[#0069db]">
+                      Xuất khẩu lao động / Du học Hàn Quốc
+                    </span>
+                  </li>
+                  <li>
+                    <span>- </span>
+                    <span class="text-[#0069db]">
+                      Xuất khẩu lao động / Du học Nhật Bản
+                    </span>
+                  </li>
+                  <li>
+                    <span>- </span>
+                    <span class="text-[#0069db]">
+                      Xuất khẩu lao động / Du học Đài Loan
+                    </span>
+                  </li>
+                  <li>
+                    <span>- </span>
+                    <span class="text-[#0069db]">
+                      Xuất khẩu lao động / Du học Đức
+                    </span>
+                  </li>
+                  <li>
+                    <span>- </span>
+                    <span class="text-[#0069db]">
+                      Xuất khẩu lao động / Du học Canada
+                    </span>
+                  </li>
+                  <li>
+                    <span>- </span>
+                    <span class="text-[#0069db]">
+                      Xuất khẩu lao động / Du học Úc
+                    </span>
+                  </li>
+                  <li>
+                    <span>- </span>
+                    <span>
+                      Xuất khẩu lao động Singapore, Trung Quốc, Hungary, Nga,...
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+        </div>
+        <aside class="sidebar col-span-4 h-[1300px] sticky top-[60px]">
+          <p class="font-bold text-[18px] text-textColor">TÌM KIẾM</p>
+          <div class="relative flex mt-3 mb-10">
+            <input
+              type="text"
+              placeholder="Từ khóa ..."
+              class="w-full px-5 py-2 border-[1px] border-[#eee] placeholder:text-[15px]"
+            />
+            <i
+              class="fa-solid fa-magnifying-glass absolute top-[33%] right-[12px] text-[14px] text-textColor"
+            ></i>
+          </div>
+          <div>
+            <p class="font-bold mb-2 text-[18px] text-textColor">
+              BÀI VIẾT MỚI NHẤT
+            </p>
+            <ul>
+              <li>
+                <a href="/">
+                  <div class="flex items-center">
+                    <img
+                      src="https://media.humanbank.vn/upload/files/2023/05/12/du-hoc-uc-khong-can-ielts-20230512143308533.jpg"
+                      alt="humanbank"
+                      class="w-[28%] h-[80px] mt-2 rounded object-cover"
+                    />
+                    <div class="w-full ml-4 text-[#232323]">
+                      <p class="line-clamp-4 font-medium leading-4 capitalize">
+                        Du học Úc không cần IELTS
+                      </p>
+                      <div
+                        class="flex items-center mt-3 mb-3 text-[#6c757d] text-[14px]"
+                      >
+                        <i class="fa-solid fa-calendar-days mr-2"></i>
+                        <span class="pr-2 mr-2 leading-[15px]">
+                          02-04-2023
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  <div class="flex items-center">
+                    <img
+                      src="https://media.humanbank.vn/upload/files/2023/05/12/du-hoc-uc-khong-can-ielts-20230512143308533.jpg"
+                      alt="humanbank"
+                      class="w-[28%] h-[80px] mt-2 rounded object-cover"
+                    />
+                    <div class="w-full ml-4 text-[#232323]">
+                      <p class="line-clamp-4 font-medium leading-4 capitalize">
+                        Du học Úc không cần IELTS
+                      </p>
+                      <div
+                        class="flex items-center mt-3 mb-3 text-[#6c757d] text-[14px]"
+                      >
+                        <i class="fa-solid fa-calendar-days mr-2"></i>
+                        <span class="pr-2 mr-2 leading-[15px]">
+                          02-04-2023
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="category font-bold mb-2 text-[18px] text-textColor">
+              DANH MỤC
+            </p>
+            <ul>
+              <li
+                class="flex items-center py-2 text-[#6c757d] border-b-[1px] border-[#eee]"
+              >
+                <i class="fa-solid fa-angle-right mr-2 text-[14px]"></i>
+                <span>Tieng Anh</span>
+              </li>
+              <li
+                class="flex items-center py-2 text-[#6c757d] border-b-[1px] border-[#eee]"
+              >
+                <i class="fa-solid fa-angle-right mr-2 text-[14px]"></i>
+                <span>Tieng My</span>
+              </li>
+              <li
+                class="flex items-center py-2 text-[#6c757d] border-b-[1px] border-[#eee]"
+              >
+                <i class="fa-solid fa-angle-right mr-2 text-[14px]"></i>
+                <span>Tieng America</span>
+              </li>
+              <li
+                class="flex items-center py-2 text-[#6c757d] border-b-[1px] border-[#eee]"
+              >
+                <i class="fa-solid fa-angle-right mr-2 text-[14px]"></i>
+                <span>Tieng USA</span>
+              </li>
+              <li
+                class="flex items-center py-2 text-[#6c757d] border-b-[1px] border-[#eee]"
+              >
+                <i class="fa-solid fa-angle-right mr-2 text-[14px]"></i>
+                <span>Tieng State</span>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <div>
+      <div class="bg-[#222845]">
+        <div class="footer w-[1130px] mx-auto py-10">
+          <div class="footer__main flex justify-between">
+            <div
+              class="footer__main--item w-[35%] text-[#aba6b3] text-[14px] text-[#c6cffa]"
+            >
+              <p class="footer__item--title mb-6 text-[20px] text-white">
+                Kết nối với Humanbank.vn
+              </p>
+              <div class="flex items-center my-1">
+                <i class="fa-solid fa-phone mr-2"></i>
+                <p class="">033 806 2211</p>
+              </div>
+              <div class="flex items-center my-1">
+                <i class="fa-solid fa-envelope mr-2"></i>
+                <p class="">contact@humanbank.vn</p>
+              </div>
+              <div class="flex items-center my-1">
+                <i class="fa-solid fa-location-dot mr-2"></i>
+                <p class="">
+                  Tầng 23, Tòa nhà T608, Đường Tôn Quang Phiệt, Cổ Nhuế 1, Bắc
+                  Từ Liêm, Hà Nội.
+                </p>
+              </div>
+              <div class="flex items-center mt-5">
+                <i
+                  class="fa-brands social-icon fa-facebook-f w-10 h-10 p-3 mr-2 bg-[#3b5998] rounded-[50%]"
+                ></i>
+                <i
+                  class="fa-solid fa-location-dot social-icon w-10 h-10 p-3 mr-2 bg-[#de4e43] rounded-[50%]"
+                ></i>
+                <i
+                  class="fa-brands fa-linkedin-in social-icon w-10 h-10 p-3 mr-2 bg-[#007bb6] rounded-[50%]"
+                ></i>
+                <i
+                  class="fa-brands fa-youtube social-icon w-10 h-10 p-3 mr-2 bg-[#ce201f] rounded-[50%]"
+                ></i>
+                <i
+                  class="fa-brands fa-tiktok social-icon w-10 h-10 p-3 mr-2 bg-[#212222] rounded-[50%]"
+                ></i>
+                <i
+                  class="fa-brands fa-instagram social-icon w-10 h-10 p-3 mr-2 bg-[#8a5a4e] rounded-[50%]"
+                ></i>
+              </div>
+              <img
+                src="./assets/img/dmca.png"
+                alt="DMCA"
+                class="w-[100px] mt-3 object-cover"
+              />
+            </div>
+            <div class="footer__main--item w-[35%]">
+              <p class="footer__item--title mb-6 text-[18px] text-white">
+                Về Humanbank.vn
+              </p>
+              <div class="flex text-[#aba6b3] text-[14px] text-[#c6cffa]">
+                <div class="mr-[100px]">
+                  <p class="my-1 sm:my-0">Về chúng tôi</p>
+                  <p class="my-1 sm:my-0">Thư viện ảnh</p>
+                  <p class="my-1 sm:my-0">Văn phòng công ty</p>
+                  <p class="my-1 sm:my-0">Liên hệ</p>
+                </div>
+                <div class="text-[#aba6b3] text-[14px] text-[#c6cffa]">
+                  <p class="text-[18px] text-white"></p>
+                  <p class="my-1 sm:my-0">Quy chế hoạt động</p>
+                  <p class="my-1 sm:my-0">Điều khoản sử dụng</p>
+                  <p class="my-1 sm:my-0">Quy định bảo mật</p>
+                  <p class="my-1 sm:my-0">Sơ đồ trang web</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="footer__main--item w-[20%] text-[#aba6b3] text-[14px] text-[#c6cffa]"
+            >
+              <p class="footer__item--title mb-6 text-[18px] text-white">
+                Danh mục
+              </p>
+              <p class="my-1">Đơn hàng</p>
+              <p class="my-1">Quốc gia</p>
+              <p class="my-1">Công ty</p>
+              <p class="my-1">Ngành nghề</p>
+              <p class="my-1">Cẩm nang việc làm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-5 bg-[#171d36] text-[#c6cffa] text-[14px] overflow-hidden">
+        <div class="copyright flex justify-center items-center">
+          <span class="flex items-center">
+            © Copyright 2021 By
+            <FaHeart class="mx-1 text-[#ff4045]" />
+            HumanBank.Vn.
+          </span>
+          <span>All Rights Reserved.</span>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

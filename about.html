@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="./assets/img/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Humanbank.vn - Tổ hợp xuất khẩu lao động và du học</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/global.css" />
+    <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div>
+      <div class="relative">
+        <div
+          class="fixed top-0 w-full bg-white z-[69] shadow-[0_0_10px_0_rgba(0,0,0,.2)]"
+        >
+          <div
+            class="header flex justify-between items-center w-[1170px] h-[60px] px-[15px] mx-auto text-[15px] font-medium text-[#292929] text-transform:uppercase"
+          >
+            <h1 class="mr-7">
+              <a href="/" title="UY TÍN – CHẤT LƯỢNG – HÀI LÒNG">
+                <img
+                  src="./assets/img/logo.png"
+                  alt="humanbank"
+                  class="header__logo w-[45px] object-cover"
+                />
+              </a>
+            </h1>
+            <ul
+              class="header__menu flex items-center h-[40px] text-[15px] whitespace-nowrap"
+            >
+              <a href="/order.html" class="px-[15px]">
+                <li>ĐƠN HÀNG</li>
+              </a>
+              <a href="/country.html" class="px-[15px] mx-[3px]">
+                <li>QUỐC GIA</li>
+              </a>
+              <a href="/company.html" class="px-[15px] mx-[3px]">
+                <li>CÔNG TY</li>
+              </a>
+              <a href="/job.html" class="px-[15px] mx-[3px]">
+                <li>NGÀNH NGHỀ</li>
+              </a>
+              <a href="/post.html" class="px-[15px] mx-[3px]">
+                <li>CẨM NANG VIỆC LÀM</li>
+              </a>
+              <li class="dropdown relative h-full">
+                <span class="h-full leading-[40px] px-5 hover:bg-white">
+                  VỀ HUMANBANK
+                </span>
+                <ul
+                  class="dropdown-menu absolute top-[40px] left-0 w-[190px] py-[10px] bg-white rounded-[4px] border-[1px] border-[#f4f4f4] shadow-[0_0_40px_rgba(0,0,0,.2)]"
+                >
+                  <a href="/about.html">
+                    <li
+                      class="px-[20px] py-[8px] text-[15px] text-[#505050] hover:text-[#efbb20] hover:bg-[#f2f2f2]"
+                    >
+                      Về Chúng Tôi
+                    </li>
+                  </a>
+                  <a href="/library.html">
+                    <li
+                      class="px-[20px] py-[8px] text-[15px] text-[#505050] hover:text-[#efbb20] hover:bg-[#f2f2f2]"
+                    >
+                      Thư Viện Ảnh
+                    </li>
+                  </a>
+                  <a href="/https://vanphong.humanbank.vn/">
+                    <li
+                      class="px-[20px] py-[8px] text-[15px] text-[#505050] hover:text-[#efbb20] hover:bg-[#f2f2f2]"
+                    >
+                      Văn Phòng Công Ty
+                    </li>
+                  </a>
+                  <a href="/contact.html">
+                    <li
+                      class="px-[20px] py-[8px] text-[15px] text-[#505050] hover:text-[#efbb20] hover:bg-[#f2f2f2]"
+                    >
+                      Liên Hệ
+                    </li>
+                  </a>
+                </ul>
+              </li>
+            </ul>
+            <a href="/sign-in.html" class="header__menu--profile ml-auto">
+              <div class="flex items-center mx-[13px] whitespace-nowrap">
+                <img
+                  src="./assets/img/header-icon.jpg"
+                  alt="header-icon"
+                  class="w-[34px] h-[34px] mx-3 object-cover text-[30px] text-[#bcbdbf]"
+                />
+                TÀI KHOẢN
+              </div>
+            </a>
+            <div>
+              <i
+                id="mobileBtn"
+                class="fa-solid fa-bars mobile-bars hidden ml-10 text-[#767676] text-[24px]"
+              ></i>
+              <div id="mobileModal" class="mobileModal">
+                <div class="modal-content">
+                  <ul class="">
+                    <a href="/order.html"><li>ĐƠN HÀNG</li></a>
+                    <a href="/country.html"><li>Quốc gia</li></a>
+                    <a href="/company.html"><li>Công ty</li></a>
+                    <a href="/job.html"><li>Ngành nghề</li></a>
+                    <a href="/post.html"><li>Cẩm nang việc làm</li></a>
+                    <a href="/product.html"><li>Sản phẩm</li></a>
+                    <a href="/about.html"><li>Về chúng tôi</li></a>
+                    <a href="/library.html"><li>Thư viện ảnh</li></a>
+                    <a href="/https://vanphong.humanbank.vn"
+                      ><li>Văn phòng Công ty</li></a
+                    >
+                    <a href="/contact.html"><li>Liên hệ</li></a>
+                    <a href="/sign-in.html"
+                      ><li class="flex items-center">
+                        <img
+                          src="./assets/img/header-icon.jpg"
+                          alt="truongdu.com"
+                          class="w-[30px] mr-2 object-cover"
+                        />Tài khoản
+                      </li></a
+                    >
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner relative w-full">
+      <div
+        class="banner__bg relative flex justify-center items-center h-[300px]"
+      >
+        <img
+          src="./assets/img/banner.jpg"
+          alt=""
+          class="absolute w-full h-full object-cover"
+        />
+        <div
+          class="absolute top-0 right-0 bottom-0 left-0 bg-[rgba(0,0,0,0.5)]"
+        ></div>
+      </div>
+      <div
+        class="banner__content absolute top-[43%] right-[50%] translate-x-[50%] text-white text-center"
+      >
+        <p class="text-[38px] font-bold whitespace-nowrap">Về chúng tôi</p>
+        <div
+          class="flex justify-center items-center whitespace-nowrap text-[20px]"
+        >
+          <a href="/">Trang chủ</a>
+          <i class="fa-solid fa-angle-right mx-3 text-[14px]"></i>
+          <span>Về chúng tôi</span>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper max-w-[1170px] px-[14px] mx-auto my-10">
+      <p
+        class="text-center text-[34px] font-bold text-textColor sm:mb-5 sm:leading-10"
+      >
+        GIỚI THIỆU HUMANBANK
+      </p>
+      <p class="py-4">
+        <a to="/" class="text-[#0069db] font-bold"> Humanbank.vn </a>
+        là nền tảng tuyển dụng thông minh dành riêng cho lĩnh vực Xuất khẩu lao
+        động và Du học, do Công Ty Cổ Phần Công Nghệ HumanBank sáng lập và phát
+        triển. Với công nghệ tiên tiến, hiện đại, kết hợp với nhiều tính năng
+        vượt trội, HumanBank sẽ giúp các công ty xuất khẩu lao động và du học dễ
+        dàng kết nối tới các ứng viên có nhu cầu ở bất kỳ nơi đâu.
+      </p>
+      <img
+        src="./assets/img/homepage-banner.jpg"
+        alt=""
+        class="banner1 w-full h-[361px] px-20 py-5 object-cover"
+      />
+      <p class="text-[26px] font-bold text-textColor">TẦM NHÌN - SỨ MỆNH</p>
+      <p class="py-3">
+        <span>
+          ✔️
+          <a href="/" class="mx-1 text-[#0069db] font-bold"> HumanBank </a>
+        </span>
+        <span>
+          cam kết hướng tới mục tiêu kết nối toàn cầu và phát triển bền vững.
+        </span>
+      </p>
+      <p class="flex items-center py-3">
+        ✔️ Tạo ra cơ hội phát triển cho hàng vạn du học sinh và người lao động,
+        nhằm mang lại lợi ích cho khách hàng và các đối tác.
+      </p>
+      <p class="flex items-center py-3">
+        ✔️ Tạo ra hàng nghìn việc làm cho các thành viên công ty trên toàn cầu,
+        mang lại giá trị to lớn cho các thành viên / cán bộ và cổ đông công ty.
+      </p>
+      <p class="text-[26px] font-bold text-textColor sm:my-3">
+        MỤC TIÊU - CHIẾN LƯỢC
+      </p>
+      <p class="py-3">
+        👍
+        <a href="/" class="mr-1 text-[#0069db] font-bold"> HumanBank </a>
+        sẽ trở thành một công ty cộng đồng.
+      </p>
+
+      <p class="py-3">
+        👍 Về chiến lược:
+        <a href="/" class="mr-1 text-[#0069db] font-bold"> HumanBank </a>
+        sẽ trở thành một công ty vận hành nhân lực toàn cầu. Đặc biệt sẽ trở
+        thành nền tảng công nghệ số 1 tại Việt Nam về lĩnh vực XKLĐ & Du học nói
+        riêng và nhân sự nói chung.
+      </p>
+      <p class="py-3">
+        👍 Về mục tiêu:
+        <a href="/" class="mr-1 text-[#0069db] font-bold"> HumanBank </a>
+        sẽ thiết lập văn phòng đại diện toàn cầu để liên kết hợp tác với các đối
+        tác trong và ngoài nước. Hỗ trợ cho các khách hàng, đảm bảo dịch vụ tốt
+        nhất và phấn đấu có văn phòng đại diện ở tất cả các quốc gia - những nơi
+        mà
+        <a href="/" class="mr-1 text-[#0069db] font-bold"> HumanBank </a>
+        có chương trình triển khai.
+      </p>
+      <div class="mb-5">
+        <img
+          src="https://media.humanbank.vn/upload/files/2022/09/18/humanbank-teambuilding-20220918010017680.jpg"
+          alt=""
+          class="w-full h-auto px-20 py-5 object-cover sm:px-0 md:px-0 lg:px-0 xl:px-0"
+        />
+        <p class="py-1 text-center italic">
+          Ban lãnh đạo công ty cùng các cán bộ nhân viên khu vực miền Bắc
+        </p>
+        <img
+          src="https://media.humanbank.vn/upload/files/2022/09/18/humanbank-team-building-bacninh-20220918010321274.jpg"
+          alt=""
+          class="w-full h-auto px-20 py-5 object-cover sm:px-0 md:px-0 lg:px-0 xl:px-0"
+        />
+        <p class="py-1 text-center italic">
+          Ban lãnh đạo công ty chụp ảnh lưu niệm cùng các học sinh tại văn phòng
+          HumanBank Bắc Ninh
+        </p>
+      </div>
+      <span class="">
+        Hãy tham gia trải nghiệm ngay các tính năng nổi bật tại:
+        <a href="/" class="mr-1 text-[#0069db]"> https://humanbank.vn </a>
+        .
+      </span>
+    </div>
+    <div>
+      <div class="bg-[#222845]">
+        <div class="footer w-[1130px] mx-auto py-10">
+          <div class="footer__main flex justify-between">
+            <div
+              class="footer__main--item w-[35%] text-[#aba6b3] text-[14px] text-[#c6cffa]"
+            >
+              <p class="footer__item--title mb-6 text-[20px] text-white">
+                Kết nối với Humanbank.vn
+              </p>
+              <div class="flex items-center my-1">
+                <i class="fa-solid fa-phone mr-2"></i>
+                <p class="">033 806 2211</p>
+              </div>
+              <div class="flex items-center my-1">
+                <i class="fa-solid fa-envelope mr-2"></i>
+                <p class="">contact@humanbank.vn</p>
+              </div>
+              <div class="flex items-center my-1">
+                <i class="fa-solid fa-location-dot mr-2"></i>
+                <p class="">
+                  Tầng 23, Tòa nhà T608, Đường Tôn Quang Phiệt, Cổ Nhuế 1, Bắc
+                  Từ Liêm, Hà Nội.
+                </p>
+              </div>
+              <div class="flex items-center mt-5">
+                <i
+                  class="fa-brands social-icon fa-facebook-f w-10 h-10 p-3 mr-2 bg-[#3b5998] rounded-[50%]"
+                ></i>
+                <i
+                  class="fa-solid fa-location-dot social-icon w-10 h-10 p-3 mr-2 bg-[#de4e43] rounded-[50%]"
+                ></i>
+                <i
+                  class="fa-brands fa-linkedin-in social-icon w-10 h-10 p-3 mr-2 bg-[#007bb6] rounded-[50%]"
+                ></i>
+                <i
+                  class="fa-brands fa-youtube social-icon w-10 h-10 p-3 mr-2 bg-[#ce201f] rounded-[50%]"
+                ></i>
+                <i
+                  class="fa-brands fa-tiktok social-icon w-10 h-10 p-3 mr-2 bg-[#212222] rounded-[50%]"
+                ></i>
+                <i
+                  class="fa-brands fa-instagram social-icon w-10 h-10 p-3 mr-2 bg-[#8a5a4e] rounded-[50%]"
+                ></i>
+              </div>
+              <img
+                src="./assets/img/dmca.png"
+                alt="DMCA"
+                class="w-[100px] mt-3 object-cover"
+              />
+            </div>
+            <div class="footer__main--item w-[35%]">
+              <p class="footer__item--title mb-6 text-[18px] text-white">
+                Về Humanbank.vn
+              </p>
+              <div class="flex text-[#aba6b3] text-[14px] text-[#c6cffa]">
+                <div class="mr-[100px]">
+                  <p class="my-1 sm:my-0">Về chúng tôi</p>
+                  <p class="my-1 sm:my-0">Thư viện ảnh</p>
+                  <p class="my-1 sm:my-0">Văn phòng công ty</p>
+                  <p class="my-1 sm:my-0">Liên hệ</p>
+                </div>
+                <div class="text-[#aba6b3] text-[14px] text-[#c6cffa]">
+                  <p class="text-[18px] text-white"></p>
+                  <p class="my-1 sm:my-0">Quy chế hoạt động</p>
+                  <p class="my-1 sm:my-0">Điều khoản sử dụng</p>
+                  <p class="my-1 sm:my-0">Quy định bảo mật</p>
+                  <p class="my-1 sm:my-0">Sơ đồ trang web</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="footer__main--item w-[20%] text-[#aba6b3] text-[14px] text-[#c6cffa]"
+            >
+              <p class="footer__item--title mb-6 text-[18px] text-white">
+                Danh mục
+              </p>
+              <p class="my-1">Đơn hàng</p>
+              <p class="my-1">Quốc gia</p>
+              <p class="my-1">Công ty</p>
+              <p class="my-1">Ngành nghề</p>
+              <p class="my-1">Cẩm nang việc làm</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-5 bg-[#171d36] text-[#c6cffa] text-[14px] overflow-hidden">
+        <div class="copyright flex justify-center items-center">
+          <span class="flex items-center">
+            © Copyright 2021 By
+            <FaHeart class="mx-1 text-[#ff4045]" />
+            HumanBank.Vn.
+          </span>
+          <span>All Rights Reserved.</span>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .wrapper {
+    width: 84%;
+  }
+}
+
+@media (min-width: 787px) and (max-width: 1023px) {
+  .wrapper {
+    width: 84%;
+  }
+  .category {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 786px) {
+  .wrapper {
+    width: 84%;
+  }
+  .post {
+    display: block !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .post__main div i {
+    margin-right: 4px;
+  }
+  .banner__title {
+    font-size: 24px !important;
+    line-height: 36px !important;
+  }
+  .form__title {
+    font-size: 26px !important;
+  }
+  .form__des {
+    width: 88%;
+    margin: 0 auto;
+    font-size: 18px !important;
+  }
+  .form__main {
+    margin-top: 10px;
+  }
+  .form__main div:first-child {
+    flex-direction: column;
+    height: 100%;
+  }
+  .form__name {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+  .form__phone {
+    width: 100% !important;
+  }
+  .form__email {
+    margin-top: 0px;
+  }
+  .sidebar {
+    height: 100% !important;
+    margin-bottom: 80px;
+  }
+  .category {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 639px) {
+  .banner__bg {
+    height: 250px !important;
+  }
+  .banner__content {
+    top: 50%;
+  }
+  .banner__content > p {
+    font-size: 20px;
+  }
+  .banner__content > div {
+    font-size: 16px;
+  }
+  .wrapper {
+    width: 96%;
+  }
+  .post {
+    display: block !important;
+    grid-template-columns: none !important;
+  }
+  .post__main div i {
+    margin-right: 4px;
+  }
+  .banner__title {
+    font-size: 24px !important;
+    line-height: 36px !important;
+  }
+  .form__title {
+    font-size: 26px !important;
+  }
+  .form__des {
+    width: 88%;
+    margin: 0 auto;
+    font-size: 18px !important;
+  }
+  .form__main {
+    margin-top: 10px;
+  }
+  .form__main div:first-child {
+    flex-direction: column;
+    height: 100%;
+  }
+  .form__name {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+  .form__phone {
+    width: 100% !important;
+  }
+  .form__email {
+    margin-top: 0px;
+  }
+  .sidebar {
+    height: 100% !important;
+    margin-bottom: 80px;
+  }
+  .category {
+    margin-top: 20px;
+  }
+}
