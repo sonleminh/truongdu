@@ -24,7 +24,7 @@
     font-size: 20px;
   }
   .order__list {
-    grid-template-columns: repeat(1, 1fr) !important;
+    grid-template-columns: repeat(1, 1fr);
   }
   .paginate a li i {
     line-height: 36px;
@@ -101,7 +101,6 @@
   }
   .order__item--logo {
     width: 60px !important;
-    height: 60px !important;
     margin-right: 12px;
   }
   .order__item--content {
