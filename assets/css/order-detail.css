@@ -38,6 +38,13 @@
   cursor: pointer;
 }
 
+input[type='date'] {
+  display: block;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  min-height: 1.2em;
+}
+
 @media (min-width: 1024px) and (max-width: 1279px) {
 }
 
