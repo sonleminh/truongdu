@@ -1,4 +1,4 @@
-<h1>This is my freelance project implemented in May 2023. My mission includes building an interface, responsive to the website according to the available design.</h1>
+<h2>This is my freelance project implemented in May 2023. My mission includes building an interface, responsive to the website according to the available design.</h2>
 <h3>Home Page</h3>
 <img src="https://github-production-user-asset-6210df.s3.amazonaws.com/88931957/252341374-f9cb1302-8506-4758-9682-a78fbe5d7bb5.png" />
 <h3>Order</h3>
